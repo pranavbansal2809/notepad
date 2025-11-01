@@ -5,7 +5,7 @@ from flask_cors import CORS
 from Routes.createNote import create_note
 from Routes.updateNote import update_note
 from Routes.deleteNote import delete_note
-from Routes.getNote import get_note
+from Routes.getNote import get_note, get_one_note
 
 from Model.NoteModel import db
 
@@ -29,7 +29,7 @@ app.register_blueprint(create_note)
 app.register_blueprint(update_note)
 app.register_blueprint(delete_note)
 app.register_blueprint(get_note)
-
+app.register_blueprint(get_one_note)
 
 if __name__ == '__main__':
     # This block ensures the database tables are created
