@@ -16,6 +16,7 @@ export const getNotes = async () => {
   }
 };
 
+
 // Creates a new note
 // noteData should be an object, e.g., { title: "New", content: "" }
 export const createNote = async (noteData) => {
